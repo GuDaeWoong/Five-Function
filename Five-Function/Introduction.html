@@ -93,18 +93,20 @@
     }
 
     .team-photo {
-    flex: 1;
-    height: 500px;
-    background-color: white;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    max-width: 1000px; /* 최대 너비 설정 */
-    width: 100%; /* 기본적으로 부모 요소에 맞춤 */
-    object-fit: contain;
-}
+        flex: 1;
+        height: 500px;
+        background-color: white;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        max-width: 1000px;
+        /* 최대 너비 설정 */
+        width: 100%;
+        /* 기본적으로 부모 요소에 맞춤 */
+        object-fit: contain;
+    }
 
     .team-rules,
     .team-members {
@@ -121,7 +123,7 @@
 
     .team-members {
         justify-content: center;
-        /* 내부 콘텐츠 가로 중앙 정렬aaaaa */
+        /* 내부 콘텐츠 가로 중앙 정렬 */
 
         display: flex;
         flex-wrap: wrap;
@@ -194,13 +196,13 @@
 
 
 <header>
+
     <div class="logo">
         <img src="..\img\알.png" alt="Five Function Logo" class="logo-image">
         Five Function
     </div>
-    <div>
 
-    </div>
+
 </header>
 
 
@@ -213,29 +215,28 @@
             <li><a href="#">방명록</a></li>
         </ul>
     </nav>
-    <section class="team-info">
-        <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="team-photo"
-            style="width: 100%; height: auto; object-fit: contain;">
+
+
+    <section class="team-info" style="position: sticky; top: 0; background-color: white; z-index: 1000;">
+        <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="team-photo" style="width: 100%; height: auto; object-fit: contain;">
         <div class="team-description">
             <p style="font-size: 40px; font-weight: bold; font-family: 'Dongle', sans-serif;">Team. Five Function</p>
-
+    
             <p>팀 소개 : 개발자가 되고 싶은 5명이 함께 협업을 배워나가요!</p>
             <p>팀 목표 : 프로젝트 완성!</p>
             <p>팀 약속 : 12:00 ~ 13:00(점심시간) / 18:00 ~ 19:00(저녁시간)</p>
-
+    
             <p style="font-size: 40px; font-weight: bold; font-family: 'Dongle', sans-serif;">팀 규칙</p>
-
+    
             <p>구대웅 : </p>
             <p>박민철 : </p>
             <p>이예진 : </p>
             <p>차순영 : </p>
             <p>천세경 : </p>
-
-
         </div>
-
-
     </section>
+
+    
     <section class="team-rules">
         <div class="rules">팀 규칙</div>
     </section>
