@@ -3,13 +3,17 @@
 <header>
     <div class="logo">
         <!-- https://i.namu.wiki/i/zPOkiQIJxSqvnvjvjlixDAcoB9pVgN0T3Gd3HMEyxdXGdDYPGKPblWEsuTruVciMTnYKRrbYmlEOT0GNMcgOEJroZPxxsR24fuoQmbZtclxnZxVUl9YLhtu--MXnfLHcrhZvqiWfmdblB8nvPfrE9Q.webp -->
-        <img src="..\img\pngegg.png" alt="Five Function Logo" class="logo-image">
+        <img src="..\img\알.png" alt="Five Function Logo" class="logo-image">
         Five Function
-        <input class="head_Search" type="text" placeholder="Five Function">
+    </div>
+    <div>
+
     </div>
 </header>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -31,9 +35,12 @@
         font-size: 24px;
         font-weight: bold; */
 
-        display: flex; /* Flexbox 레이아웃 적용 */
-        align-items: center; /* 수직 가운데 정렬 */
+        display: flex;
+        /* Flexbox 레이아웃 적용 */
+        align-items: center;
+        /* 수직 가운데 정렬 */
         color: #ff9900;
+
         font-size: 24px;
         font-weight: bold;
     }
@@ -45,84 +52,120 @@
         /* 로고 이미지와 텍스트 사이의 간격 */
         vertical-align: right;
         /* 이미지와 텍스트를 수직 중앙 정렬 */
-        
+
     }
 
-    .head_Search {
+
+
+
+
+
+
+    /* menu-bar */
+    .menu-bar {
         background-color: white;
         /* 배경색 */
-        border: 2px solid orange;
-        /* 테두리 */
-        padding: 15px;
-        /* 내부 여백 */
-        display: flex;
-        /* Flexbox 사용 */
-        align-items: right;
-        /* 수직 가운데 정렬 */
-        border-radius: 4px;
-        margin-left: auto;
-        margin-right: 30px;
-        width: 400px;
-        font-size: 20px;
-    }
-
-
-
-
-
-     /* menu-bar */
-    .menu-bar {
-        background-color: white; /* 배경색 */
-        border-top: 2px solid orange; /* 상단 테두리 */
-        border-bottom: 2px solid orange; /* 하단 테두리 */
+        border-top: 2px solid orange;
+        /* 상단 테두리 */
+        border-bottom: 2px solid orange;
+        /* 하단 테두리 */
         padding: 10px;
     }
 
     .menu-bar ul {
-        list-style: none; /* 목록 스타일 제거 */
-        display: flex; /* Flexbox 레이아웃 사용 */
-        justify-content: space-around; /* 각 항목 간 동일한 간격 */
+        list-style: none;
+        /* 목록 스타일 제거 */
+        display: flex;
+        /* Flexbox 레이아웃 사용 */
+        justify-content: space-around;
+        /* 각 항목 간 동일한 간격 */
         padding: 0;
         margin: 0;
     }
 
     .menu-bar li a {
-        text-decoration: none; /* 링크 밑줄 제거 */
-        color: #333; /* 글자색 */
-        font-size: 20px; /* 글자 크기 */
-        padding: 5px 10px; /* 내부 여백 */
-        font-weight: bold; /* 글자를 굵게 설정 */
+        text-decoration: none;
+        /* 링크 밑줄 제거 */
+        color: #333;
+        /* 글자색 */
+        font-size: 20px;
+        /* 글자 크기 */
+        padding: 5px 10px;
+        /* 내부 여백 */
+        font-weight: bold;
+        /* 글자를 굵게 설정 */
     }
 
+
+    .image-container {
+        display: flex;
+        /* Flexbox 레이아웃 사용 */
+        justify-content: center;
+        /* 가로 중앙 정렬 */
+        align-items: center;
+        /* 세로 중앙 정렬 (필요 시) */
+        margin-top: 20px;
+        /* 이미지 위쪽 여백 */
+    }
+
+    .menu-image {
+        max-width: 100%;
+        /* 이미지 크기 제한 */
+        height: auto;
+        /* 비율 유지 */
+    }
+
+    .description-container {
+        background-color: #f0f0f0;
+        text-align: center;
+        /* 텍스트를 중앙 정렬 */
+        margin-top: 0px;
+        /* 이미지와 설명 사이의 간격 */
+        padding: 10px;
+        /* 내부 여백 */
+        font-size: 25px;
+        /* 글자 크기 */
+        color: #333;
+        /* 글자 색상 */
+        height: auto;
+        width: 650px;
+        height: 200px;
+        margin: 20px auto;
+
+        font-family: "Dongle", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+
+        line-height: 0.5; /* 줄 간격을 줄임 (기본값은 1.5) */
+
+    }
 
 
 </style>
 
 <body>
     <header>
-        </header>
+    </header>
 
     <nav class="menu-bar">
         <ul>
-            <li><a href="#">팀 & 팀원 소개</a></li>
-            <li><a href="#">협업 스타일</a></li>
+            <li><a href="#">팀 소개</a></li>
+            <li><a href="#">팀원 소개</a></li>
             <li><a href="#">방명록</a></li>
             <!-- <li><a href="#">팀 목표와 약속</a></li> -->
         </ul>
     </nav>
     <div class="image-container">
-        <img src="..\img\병아리 테두리.png" alt="메뉴 바 아래 이미지" class="menu-image">
+        <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="menu-image">
+    </div>
+    <div class="description-container" >
+        <p>안녕하세요</p>
+        <p>저희는 E 2명과 I 3명으로 구성된 뼝아리 5남매 입니다.</p>
+        <p>🐥 🐤 🐣 🐤 🐥</p>
+        <p>모두 걸어온 길은 다르지만 프로젝트를 완성하고자</p>
+        <p>의기투합하여 한 코딩으로 똘똘 뭉쳤습니다</p>
     </div>
 
 
 </body>
-
-
-
-
-
-
-
-
-
-
