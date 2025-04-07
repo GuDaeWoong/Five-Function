@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀 소개</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /* header */
+    .header {
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        /* color: #ff9900;
+        font-size: 24px;
+        font-weight: bold; */
+
+        display: flex;
+        /* Flexbox 레이아웃 적용 */
+        align-items: center;
+        /* 수직 가운데 정렬 */
+        color: #ff9900;
+
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .logo-image {
+        height: 70px;
+        /* 로고 이미지 높이 조정 */
+        margin-right: 30px;
+        /* 로고 이미지와 텍스트 사이의 간격 */
+        vertical-align: right;
+        /* 이미지와 텍스트를 수직 중앙 정렬 */
+
+    }
+
+    .menu {
+        background-color: white;
+        /* 배경색 */
+        border-top: 2px solid orange;
+        /* 상단 테두리 */
+        border-bottom: 2px solid orange;
+        /* 하단 테두리 */
+        padding: 10px;
+    }
+
+    .menu ul {
+        list-style: none;
+        /* 목록 스타일 제거 */
+        display: flex;
+        /* Flexbox 레이아웃 사용 */
+        justify-content: space-around;
+        /* 각 항목 간 동일한 간격 */
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        /* 링크 밑줄 제거 */
+        color: #333;
+        /* 글자색 */
+        font-size: 20px;
+        /* 글자 크기 */
+        padding: 5px 10px;
+        /* 내부 여백 */
+        font-weight: bold;
+        /* 글자를 굵게 설정 */
+    }
+
+    .team-info {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .team-photo{
+        flex: 1;
+        height: 500px;
+        background-color: #f0f0f0;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: left;
+    }
+
+    .team-rules,
+    .team-members {
+        margin-top: 20px;
+    }
+
+    .rules,
+    .members {
+        background-color: #e0e0e0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .team-rules .rules {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-members {
+        justify-content: center; /* 내부 콘텐츠 가로 중앙 정렬 */
+
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid #ccc; /* 테두리 추가 */
+        border-radius: 15px; /* 테두리 둥글게 */
+        padding: 10px; /* 내부 여백 */
+        height: 340px;
+    }
+
+    .team-members .member {
+
+        
+        width: 200px;
+        height: 200px;
+        background-color: #f0f0f0;
+        border-radius: 15px; /* 테두리 둥글게 */
+        margin: 10px;
+    }
+
+
+    .memberName {
+        font-family: "Dongle", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    .member-button {
+            background-color: #D8BFD8;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+
+            margin: 20px auto;
+            /* margin-left: auto;버튼을 오른쪽으로 정렬 */
+            display: block; /* 부모 요소 내에서 블록 요소로 설정 */
+        }
+
+
+        .team-description {
+        background-color: #f0f0f0;
+        text-align: left;
+        /* 텍스트를 중앙 정렬 */
+        margin-top: 0px;
+        /* 이미지와 설명 사이의 간격 */
+        padding: 10px;
+        /* 내부 여백 */
+        font-size: 25px;
+        /* 글자 크기 */
+        color: #333;
+        /* 글자 색상 */
+        height: auto;
+        width: 650px;
+        height: 500px;
+        margin: 20px auto;
+
+        font-family: "Dongle", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+
+        line-height: 0.5; /* 줄 간격을 줄임 (기본값은 1.5) */
+
+    }
+    
+
+
+</style>
+
+
+<header>
+    <div class="logo">
+        <img src="..\img\알.png" alt="Five Function Logo" class="logo-image">
+        Five Function
+    </div>
+    <div>
+
+    </div>
+</header>
+
+
+<body>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">팀 소개</a></li>
+            <li><a href="#">팀원 소개</a></li>
+            <li><a href="#">방명록</a></li>
+        </ul>
+    </nav>
+    <section class="team-info">
+        <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="team-photo">
+        <div class="team-description">
+            <p style="font-size: 40px; font-weight: bold; font-family: 'Dongle', sans-serif;">Team. Five Function</p>
+            
+            <p>팀 소개 : 개발자가 되고 싶은 5명이 함께 협업을 배워나가요!</p>
+            <p>팀 목표 : 프로젝트 완성!</p>
+            <p>팀 약속 : 12:00 ~ 13:00(점심시간) / 18:00 ~ 19:00(저녁시간)</p>
+
+            <p style="font-size: 40px; font-weight: bold; font-family: 'Dongle', sans-serif;">팀 규칙</p>
+            
+            <p>구대웅 : </p>
+            <p>박민철 : </p>
+            <p>이예진 : </p>
+            <p>차순영 : </p>
+            <p>천세경 : </p>
+
+
+        </div>
+
+
+    </section>
+    <section class="team-rules">
+        <div class="rules">팀 규칙</div>
+    </section>
+    <section class="team-members">
+
+        <div class="member">
+            <img src="..\img\구대웅님.png" alt="팀원 사진" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            <div class="memberName">구대웅</div>
+            <div class="memberName">MBTI : ISTJ</div>
+            <div class="memberName">별명 : 곰토끼</div>
+            <button class="member-button">상세보기</button>
+        </div>
+        <div class="member">
+            <img src="..\img\박민철님.png" alt="팀원 사진" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            <div class="memberName">박민철</div>
+            <div class="memberName">MBTI : ISFJ</div>
+            <div class="memberName">별명 : </div>
+            <button class="member-button">상세보기</button>
+        </div>
+        <div class="member">
+            <img src="..\img\구대웅님.png" alt="팀원 사진" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            <div class="memberName">이예진</div>
+            <div class="memberName">MBTI : ESTP</div>
+            <div class="memberName">별명 : </div>
+            <button class="member-button">상세보기</button>
+        </div>
+        <div class="member">
+            <img src="..\img\구대웅님.png" alt="팀원 사진" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            <div class="memberName">차순영</div>
+            <div class="memberName">MBTI : ESTJ / ESFJ</div>
+            <div class="memberName">별명 : </div>
+            <button class="member-button">상세보기</button>
+        </div>
+        <div class="member">
+            <img src="..\img\구대웅님.png" alt="팀원 사진" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            <div class="memberName">천세경</div>
+            <div class="memberName">MBTI : INTJ</div>
+            <div class="memberName">별명 : </div>
+            <button class="member-button">상세보기</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
