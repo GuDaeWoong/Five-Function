@@ -89,6 +89,8 @@
 
     .team-info {
         display: flex;
+        flex-wrap: wrap;
+        /* 화면 크기가 줄어들면 요소가 줄 바꿈됨 */
         margin-top: 20px;
     }
 
@@ -184,13 +186,12 @@
         width: 650px;
         max-width: 650px;
         /* 최대 너비 설정 */
-        height: 500px;
         margin: 20px auto;
         font-family: "Dongle", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-weight: bold;
-        line-height: 0.5;
+        line-height: 1.5;
     }
 </style>
 
@@ -218,16 +219,17 @@
 
 
     <section class="team-info" style="position: sticky; top: 0; background-color: white; z-index: 1000;">
-        <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="team-photo" style="width: 100%; height: auto; object-fit: contain;">
+        <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="team-photo"
+            style="width: 100%; height: auto; object-fit: contain;">
         <div class="team-description">
             <p style="font-size: 40px; font-weight: bold; font-family: 'Dongle', sans-serif;">Team. Five Function</p>
-    
+
             <p>팀 소개 : 개발자가 되고 싶은 5명이 함께 협업을 배워나가요!</p>
             <p>팀 목표 : 프로젝트 완성!</p>
             <p>팀 약속 : 12:00 ~ 13:00(점심시간) / 18:00 ~ 19:00(저녁시간)</p>
-    
+
             <p style="font-size: 40px; font-weight: bold; font-family: 'Dongle', sans-serif;">팀 규칙</p>
-    
+
             <p>구대웅 : </p>
             <p>박민철 : </p>
             <p>이예진 : </p>
