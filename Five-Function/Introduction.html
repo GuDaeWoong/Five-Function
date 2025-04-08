@@ -13,8 +13,16 @@
 
     body {
         font-family: Arial, sans-serif;
-        margin: 0;
+        margin: 30px 50px; /* 좌우에 20px 여백 추가 */
         padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
 
@@ -191,6 +199,17 @@
         font-weight: bold;
         line-height: 1.5;
     }
+
+
+
+    .container {
+    width: 90%; /* 페이지 너비를 90%로 설정 (양쪽 5% 여백) */
+    max-width: 1200px; /* 최대 너비 설정 (선택 사항) */
+    margin: 20px auto; /* 상하 20px 여백, 좌우 자동 여백 (중앙 정렬) */
+    padding: 20px; /* 내부 여백 추가 (선택 사항) */
+    box-sizing: border-box; /* padding, border를 width에 포함 */
+    }   
+
 </style>
 
 
@@ -263,19 +282,14 @@
 
 
 <header>
-    
-
     <div class="logo">
         <img src="..\img\알.png" alt="Five Function Logo" class="logo-image">
         Five Function
     </div>
-
-
 </header>
 
 
 <body>
-
     <nav class="menu">
         <ul>
             <li><a href="#">팀 소개</a></li>
@@ -295,7 +309,7 @@
             <p>팀 목표 : 프로젝트 완성!</p>
             <p>팀 약속 : 12:00 ~ 13:00(점심시간) / 18:00 ~ 19:00(저녁시간)</p>
 
-            <p style="font-size: 40px; font-weight: bold; font-family: 'Dongle', sans-serif;">팀 규칙</p>
+            <p style="font-size: 40px; font-weight: bold; font-family: 'Dongle', sans-serif;">팀 각오</p>
 
             <p>구대웅 : </p>
             <p>박민철 : </p>
@@ -306,9 +320,7 @@
     </section>
 
 
-    <section class="team-rules">
-        <div class="rules">팀 규칙</div>
-    </section>
+
     <section class="team-members">
 
         <div class="member">
