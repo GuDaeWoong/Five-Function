@@ -3,26 +3,17 @@
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
-    body {
-      font-family: Arial, sans-serif;
-      padding: 0;
+    * {
+      background-color: white;
     }
 
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      box-sizing: border-box;
+    body {
+      font-family: Arial, sans-serif;
     }
 
     /* header */
-    .header {
-      background-color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    header {
+      padding: 10px 20px;
     }
 
     .logo {
@@ -109,6 +100,14 @@
       border-radius: 10px; /* 이미지 둥글게 */
     }
 
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
     .description-container {
       /* 텍스트란 화면 비율 대비 자동 조정*/
       flex: 1 1 300px; /* 최소 너비 300px, 비율 유지 */
@@ -139,15 +138,13 @@
     }
   </style>
 
-  <header>
-    <div class="logo">
-      <img src="..\img\알.png" alt="Five Function Logo" class="logo-image" />
-      Five Function
-    </div>
-  </header>
-
   <body>
-    <header></header>
+    <header>
+      <div class="logo">
+        <img src="..\img\알.png" alt="Five Function Logo" class="logo-image" />
+        Five Function
+      </div>
+    </header>
 
     <nav class="menu-bar">
       <ul>
@@ -157,9 +154,11 @@
         <!-- <li><a href="#">팀 목표와 약속</a></li> -->
       </ul>
     </nav>
+
     <div class="image-container">
       <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="menu-image" />
     </div>
+
     <div class="description-container">
       <p>안녕하세요</p>
       <p>저희는 E 2명과 I 3명으로 구성된 뼝아리 5남매 입니다.</p>
