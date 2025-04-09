@@ -111,17 +111,19 @@
         height: auto;
         margin: auto;
         object-fit: contain; /* 이미지 비율 유지 */
-
       }
       .team-description {
-        color: #333;
-
         flex: 1 1 300px; /* 최소 너비 300px, 비율 유지 */
         max-width: 600px; /* 최대 너비 설정 */
         padding: 5px;
         border-radius: 10px; /* 모서리 둥글게 */
-        background-color: #fff8e1; /* 배경색 설정 */
-        border: 5px solid #fff8e1; /* 테두리 색상 설정 */
+       
+        /* background-color: #fff8e1;  */
+        /* 배경색 설정 */
+        /* border: 1px solid #fdf2cf;  */
+        /* 테두리 색상 설정 */
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  */
+        /* 그림자 추가 */
 
         /* 폰트 설정 */
         font-family: "Dongle", sans-serif;
@@ -129,22 +131,25 @@
         /* line-height: 1.5; */
       }
 
-      .team-description div,
-      .team-description h1,
-      .team-description h2,
-      .team-description p,
-      .team-description li {
-        background-color: #fff8e1;
-        padding: 5px;
+      .team-text1,
+      .team-text2 {
+          border: 1px solid #fdf2cf; /* 테두리 색상 */
+          border-radius: 10px; /* 모서리를 둥글게 */
+          padding: 15px; /* 내부 여백 */
+          background-color: #fff8e1; /* 박스 배경색 */
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+          margin-bottom: 20px; /* 박스 간 간격 */
       }
 
-      .team-description p {
-        font-size: 29px;
+      .team-text1 h1,
+      .team-text1 h2,
+      .team-text1 div,
+      .team-text2 h2,
+      .team-text2 li {
+        background-color: #fff8e1;
+        color: #333;
       }
-      .team-description li {
-        font-size: 27px;
-        line-height: 30px
-      }
+
     </style>
   </head>
 
@@ -166,28 +171,33 @@
     </nav>
 
     <section class="team-info" style="top: 0; z-index: 1000">
-      <div class="container d-flex p-2">
-        <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="team-photo" />
-        <div class="team-description d-flex justify-content-center">
-          <div class="p-3 m-2 rounded-3 shadow-sm">
-            <h1 style="font-size: 50px; font-weight: bold; line-height: 20px p-3">Team. Five Function</h1>
+      <div class="container">
+        <img
+          src="..\img\알2.png"
+          alt="메뉴 바 아래 이미지"
+          class="team-photo"
+        />
+        <div class="team-description d-flex flex-column mb-3">
+          <div class="team-text1 p-4 m-2 rounded-3">
+            <h1 style="font-size: 50px; font-weight: bold;">
+              Team. Five Function
+            </h1>
             <h2 style="font-weight: bold">팀 소개 :</h2>
-            <p>
+            <div>
               우리 팀은 각자 다른 개성과 강점을 가진 5개의 함수들로 이루어진
               하나의 객체입니다.<br />
               아직은 알에서 갓 깨어난 병아리처럼 서툴고 작은 발걸음이지만, 서로
               연결된 함수들이 협력하며 꾸준히 성장하고, 새로운 데이터를 배우며
               강력한 객체로 거듭날 것입니다.
-            </p>
-
-            <h2 style="font-weight: bold;">
-              우리가 가진 메서드
-            </h2>
-            <li>열정으로_배우기()</li>
-            <li>함께_고민하기()</li>
-            <li>꾸준히_성장하기()</li>
-            <li>긍정적으로_협력하기()</li>
-            <li>끝까지_완주하기()</li>
+            </div>
+          </div>
+          <div class="team-text2 p-4 m-2 rounded-3">
+            <h2 style="font-weight: bold">우리가 가진 함수</h2>
+            <li>열정으로_배우기();</li>
+            <li>함께_고민하기();</li>
+            <li>꾸준히_성장하기();</li>
+            <li>긍정적으로_협력하기();</li>
+            <li>끝까지_완주하기();</li>
           </div>
         </div>
       </div>
