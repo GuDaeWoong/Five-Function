@@ -156,7 +156,7 @@
 .team-member-box {
   max-width: 100%;
   margin-top: 30px;
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  background-color: #fff3e0;
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -164,12 +164,14 @@
 }
 
 .team-member-box h2 {
+  background-color: #fff3e0;
   margin-bottom: 20px;
   font-size: 1.5em;
   color: #333;
 }
 
 .team-comments {
+  background-color: #fff3e0;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -177,12 +179,13 @@
 
 .comment-bubble {
   background-color: #ffffff;
-  padding: 15px 20px;
+  padding: 15px 10px;
   border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 300px;
   position: relative;
   flex: 1 1 200px;
+  font-size: 1rem; /* 글자 크기 */
 }
 
 .comment-bubble::after {
@@ -200,7 +203,14 @@
   color: #333;
   font-size: 0.95em;
 }
+.memberCard{
+  background-color: #fff3e0;
+}
 
+.card-img-top{
+  padding: 0px 0px 0px 15px;
+  background-color: #fff3e0;
+}
 
 </style>
 
@@ -208,15 +218,15 @@
   <header>
     <div class="logo">
       <img src="..\img\알.png" alt="Five Function Logo" class="logo-image" />
-      Five Function
+      <a href="main.html" style="text-decoration: none; color: #ff9900;">Five Function</a>
     </div>
   </header>
 
   <nav class="menu-bar">
     <ul>
-      <li><a href="Introduction.html">팀 소개</a></li>
-      <li><a href="#">팀원 소개</a></li>
-      <li><a href="#">방명록</a></li>
+      <li><a href="teamInfo.html">팀 소개</a></li>
+      <li><a href="memberCards.html">팀원 소개</a></li>
+      <li><a href="guestbook.html">방명록</a></li>
       <!-- <li><a href="#">팀 목표와 약속</a></li> -->
     </ul>
   </nav>
@@ -252,28 +262,37 @@
   </div>
   
   <!-- 팀원들의 한마디 -->
-  <div class="team-member-box">
-    <h2>팀원들의 한 마디</h2>
-    <div class="team-comments">
-      <div class="comment-bubble">
-        <p><strong>구대웅:</strong> 자신감 가져욧!!!</p>
+    <div class="team-member-box">
+      <h2>팀원들의 한 마디</h2>
+      <div class="team-comments">
+        <div class="memberCard" style="width: 18rem;">
+          <div class="comment-bubble">
+            <p><strong>구대웅 :</strong> 자신감 가져욧!!!</p>
+          </div>
+          <img src="../img/구대웅님.png" class="card-img-top" alt="구대웅님 프로필 사진">
+        </div>
+        <div class="memberCard" style="width: 18rem;">
+          <div class="comment-bubble">
+            <p><strong>박민철 :</strong> 저와 함께 게임하시죠!</p>
+          </div>
+          <img src="../img/박민철님.png" class="card-img-top" alt="박민철님 프로필 사진">
+        </div>
+        <div class="memberCard" style="width: 18rem;">
+          <div class="comment-bubble">
+            <p><strong>차순영 :</strong> 미니 프로젝트 화이팅!!</p>
+          </div>
+          <img src="../img/차순영님.png" class="card-img-top" alt="차순영님 프로필 사진">
+        </div>
+        <div class="memberCard" style="width: 18rem;">
+          <div class="comment-bubble">
+            <p><strong>천세경 :</strong> 마비노기 게임 함께하실래요?</p>
+          </div>
+            <img src="../img/천세경님.png" class="card-img-top" alt="천세경님 프로필 사진">
+          </div>
+
+        </div>
       </div>
-      <div class="comment-bubble">
-        <p><strong>박민철:</strong> 저와 함께 게임하시죠!</p>
-      </div>
-      <div class="comment-bubble">
-        <p><strong>차순영:</strong> 미니 프로젝트 화이팅!!</p>
-      </div>
-      <div class="comment-bubble">
-        <p><strong>천세경:</strong> 마비노기 게임 함께하실래요?</p>
-      </div>
+
     </div>
-  </div>
-  
-  
-</body>
-
-
-</body>
-
+  </body>
 </html>
