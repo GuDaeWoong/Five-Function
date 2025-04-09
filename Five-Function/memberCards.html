@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Five-Function: 팀 멤버목록</title>
+    <title>Five-Function: 팀원 상세 소개</title>
   </head>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
@@ -79,6 +79,66 @@
       font-weight: bold;
       /* 글자를 굵게 설정 */
     }
+    /*--navigation bar css--*/
+
+    /*--여기서부터 작성해주세요--*/
+
+    .container {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .photo-box {
+        width: 320px;
+        height: 400px;
+        background-color: #ff9900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      .photo-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px solid #ddd;
+      }
+
+      .info-box {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .info-box div {
+        background-color: gray;
+        padding: 10px;
+      }
+
+      .bio-box {
+        background-color: gray;
+        padding: 10px;
+        height: 230px;
+      }
+
+      .team-member-box {
+        background-color: gray;
+        margin-top: 30px;
+        padding: 100px;
+        text-align: left;
+        position: relative;
+      }
+
+      .team-member-box strong {
+        display: block;
+        margin: 0;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
   </style>
 
   <body>
@@ -97,5 +157,46 @@
         <!-- <li><a href="#">팀 목표와 약속</a></li> -->
       </ul>
     </nav>
+
+    <section class="memberCards">
+      <div class="container">
+        <div class="photo-box">
+          <img src="..\img\이예진.jpg" alt="프로필 사진" />
+        </div>
+  
+        <header></header>
+  
+        <div class="info-box">
+          <div><strong>이름 : 이예진</strong></div>
+          <div><strong>MBTI : ESTP </strong></div>
+          <div>
+            <strong
+              >Blog/Github 링크: https://soaveo3o.tistory.com/
+              https://github.com/YeJin420</strong
+            >
+          </div>
+          <div class="bio-box">
+            <strong
+              >자기소개
+              <p>다양한 장르의 게임과 음악에 조예가 깊은 이예진이니다.</p>
+              <p>참고로 곽철이 이모티콘을 다수 보유하고 있습니다.</p>
+              <p>
+                곽철이 이모티콘을 사용해 저와 소통하시고 싶으신분은 환영입니다.
+              </p>
+            </strong>
+          </div>
+        </div>
+      </div>
+  
+      <div class="team-member-box">
+        <strong
+          >팀원들의 한 마디
+          <p>구대웅 : 자신감 가져욧!!!</p>
+          <p>박민철 : 저와 함께 게임하시죠!</p>
+          <p>차순영 : 미니 프로젝트 화이팅!!</p>
+          <p>천세경 : 마비노기 게임에 함께하실래요?</p>
+        </strong>
+      </div>
+    </section>
   </body>
 </html>

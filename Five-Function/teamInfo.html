@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Five-Function: 팀 멤버목록</title>
+    <title>Five-Function: 팀 소개</title>
   </head>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
@@ -79,6 +79,64 @@
       font-weight: bold;
       /* 글자를 굵게 설정 */
     }
+    /*--navigation bar css--*/
+
+    /*--여기서부터 작성해주세요--*/
+    .team-info {
+        display: flex;
+        flex-wrap: wrap;
+        /* 화면 크기가 줄어들면 요소가 줄 바꿈됨 */
+        margin-top: 20px;
+    }
+
+    .team-photo {
+        flex: 1;
+        height: 500px;
+        background-color: white;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        /* max-width: 1000px; */
+        /* 최대 너비 설정 */
+        width: 100%;
+        /* 기본적으로 부모 요소에 맞춤 */
+        object-fit: contain;
+    }
+    
+    .team-description {
+        /* background-color: #f0f0f0; */
+        text-align: left;
+        margin-top: 0px;
+        padding: 10px;
+        font-size: 25px;
+        color: #333;
+        height: auto;
+        width: 650px;
+        max-width: 650px;
+        /* 최대 너비 설정 */
+        margin: 20px auto;
+        font-family: "Dongle", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    .team-description div{
+        font-family: "Dongle", sans-serif;
+        font-size: 29px;
+        /* font-style: normal; */
+        /* font-weight: bold; */
+    }
+    .team-description li{
+        font-family: "Dongle", sans-serif;
+        font-size: 27px;
+        font-style: normal;
+    }
+
+
   </style>
 
   <body>
@@ -97,5 +155,29 @@
         <!-- <li><a href="#">팀 목표와 약속</a></li> -->
       </ul>
     </nav>
+
+    <section class="team-info" style="top: 0; z-index: 1000;">
+      <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="team-photo"
+          style="object-fit: contain;">
+      <div class="team-description">
+          <h1 style="font-size: 50px; line-height:20px;  font-family: 'Dongle', sans-serif;">Team. Five Function</h1>
+          <h2 style="font-weight: bold; line-height:10px; font-family: 'Dongle', sans-serif;">팀 소개 :</h2>
+          <div>우리 팀은 각자 다른 개성과 강점을 가진 5개의 함수들로 이루어진 하나의 객체입니다.<br>
+             아직은 알에서 갓 깨어난 병아리처럼 서툴고 작은 발걸음이지만,
+             서로 연결된 함수들이 협력하며 꾸준히 성장하고, 새로운 데이터를 배우며 강력한 객체로 거듭날 것입니다.
+          </div>
+
+          <h2 style="font-weight: bold; line-height:10px; font-family: 'Dongle', sans-serif;">우리가 가진 메서드</h2>
+          <div>
+              <li>열정으로_배우기()</li>
+              <li>함께_고민하기()</li>
+              <li>꾸준히_성장하기()</li>
+              <li>긍정적으로_협력하기()</li>
+              <li>끝까지_완주하기()</li></li>                    
+          </div>
+      </div>      
+  </section>
+
+
   </body>
 </html>
