@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
@@ -79,67 +81,39 @@
       /* 글자를 굵게 설정 */
     }
 
-    .image-container {
-      display: flex;
-      /* Flexbox 레이아웃 사용 */
-      justify-content: center;
-      /* 가로 중앙 정렬 */
-      align-items: center;
-      /* 세로 중앙 정렬 (필요 시) */
-      margin-top: 20px;
-      /* 이미지 위쪽 여백 */
-    }
+
 
     .menu-image {
       /* 이미지 비율 자동 조정*/
-      flex: 1 1 300px; /* 최소 너비 300px, 비율 유지 */
-      max-width: 50%; /* 이미지 크기 제한 */
+      flex: 1 1 100px; /* 최소 너비 300px, 비율 유지 */
+      max-width: 500px; /* 이미지 크기 제한 */
+      max-height: 500px; 
       height: auto; /* 비율 유지 */
+      width : auto; /* 비율 유지 */
+
     }
 
-    .menu-image img {
+    .image-container {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 (필요 시) */
+}
+    /* .menu-image img {
       width: 80%; /* 부모 요소에 맞게 조정 */
-      height: auto; /* 비율 유지 */
-      object-fit: cover; /* 이미지 비율 유지 */
-      border-radius: 10px; /* 이미지 둥글게 */
-    }
+      /*height: auto; /* 비율 유지 */
+      /*object-fit: cover; /* 이미지 비율 유지 */
+      /*border-radius: 10px; /* 이미지 둥글게 */
+    /*} */
 
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      box-sizing: border-box;
-    }
 
-    .description-container {
-      /* 텍스트란 화면 비율 대비 자동 조정*/
-      flex: 1 1 300px; /* 최소 너비 300px, 비율 유지 */
-      max-width: 85%; /* 최대 너비를 100%로 제한 */
-      border-radius: 10px; /* 테두리 둥글게 */
 
-      background-color: #f0f0f0;
-      text-align: center;
-      /* 텍스트를 중앙 정렬 */
-      margin-top: 0px;
-      /* 이미지와 설명 사이의 간격 */
-      padding: 10px;
-      /* 내부 여백 */
-      font-size: 25px;
-      /* 글자 크기 */
-      color: #333;
-      /* 글자 색상 */
-      height: auto; /* 높이 자동 조정 */
-      width: auto; /* 너비 자동 조정 */
-      margin: 20px auto;
 
-      font-family: "Dongle", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-weight: bold;
 
-      line-height: 0.5; /* 줄 간격을 줄임 (기본값은 1.5) */
-    }
+
+
+
+
+
   </style>
 
   <body>
@@ -163,12 +137,20 @@
       <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="menu-image" />
     </div>
 
-    <div class="description-container">
-      <p>안녕하세요</p>
-      <p>저희는 E 2명과 I 3명으로 구성된 뼝아리 5남매 입니다.</p>
-      <p>🐥 🐤 🐣 🐤 🐥</p>
-      <p>모두 걸어온 길은 다르지만 프로젝트를 완성하고자</p>
-      <p>의기투합하여 한 코딩으로 똘똘 뭉쳤습니다</p>
+    <div calss="IntroductionTeam">
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold"style="text-align: center">Five Function</h1>
+          <p class="fs-4" style="text-align: center; display: flex; justify-content: center; align-items: center;">안녕하세요 <br>저희는 E 2명과 I 3명으로 구성된 뼝아리 5남매 입니다 <br>🐥 🐤 🐣 🐤 🐥<br>모두 걸어온 길은 다르지만 프로젝트를 완성하고자<br>의기투합하여 한 코딩으로 똘똘 뭉쳤습니다</p>
+        </div>
+
+      </div>
     </div>
   </body>
 </html>
+
+
+
+
+
+
