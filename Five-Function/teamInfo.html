@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Five-Function: 팀 멤버목록</title>
+    <title>Five-Function: 팀 소개</title>
   </head>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
@@ -83,6 +83,53 @@
     /*--navigation bar css--*/
 
     /*--여기서부터 작성해주세요--*/
+
+    .team-info {
+      display: flex;
+      flex-wrap: wrap;
+      /* 화면 크기가 줄어들면 요소가 줄 바꿈됨 */
+      margin-top: 20px;
+    }
+
+    .team-photo {
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      
+      /* 이미지 조정 */
+      flex: 1; /* 최소 너비 300px, 비율 유지 */
+      height: auto;
+      width: auto; /* 기본적으로 부모 요소에 맞춤 */
+      max-width: 700px; /* 최대 너비 설정 */
+      max-height: 700px; /* 최대 높이 설정 */
+      object-fit: contain;
+    }
+    .team-description {
+      padding: 5px;
+      color: #333;
+
+      max-width: 650px; /* 최대 너비 설정 */
+      margin: 0 auto;
+
+      /* 폰트 설정 */
+      font-family: "Dongle", sans-serif;
+      font-size: 25px;
+      line-height: 1.5;
+    }
+    .team-description p {
+      font-size: 29px;
+    }
+    .team-description li {
+      font-size: 27px;
+    }
+
+    .team-description div,h1,h2,p,li{
+      background-color: #f0f0f0;
+      padding: 5px;
+    }
+
   </style>
 
   <body>
@@ -101,5 +148,29 @@
         <!-- <li><a href="#">팀 목표와 약속</a></li> -->
       </ul>
     </nav>
+
+    <section class="team-info" style="top: 0; z-index: 1000">
+      <img src="..\img\알2.png" alt="메뉴 바 아래 이미지" class="team-photo">
+      <div class="team-description">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h1 style="font-size: 50px; font-weight: bold; line-height: 20px">Team. Five Function</h1>
+          <h2 style="font-weight: bold; line-height: 10px">팀 소개 :</h2>
+          <p>
+            우리 팀은 각자 다른 개성과 강점을 가진 5개의 함수들로 이루어진 하나의
+            객체입니다.<br/>
+            아직은 알에서 갓 깨어난 병아리처럼 서툴고 작은 발걸음이지만, 서로
+            연결된 함수들이 협력하며 꾸준히 성장하고, 새로운 데이터를 배우며
+            강력한 객체로 거듭날 것입니다.
+          </p>
+  
+          <h2 style="font-weight: bold; line-height: 10px;">우리가 가진 메서드</h2>
+          <li>열정으로_배우기()</li>
+          <li>함께_고민하기()</li>
+          <li>꾸준히_성장하기()</li>
+          <li>긍정적으로_협력하기()</li>
+          <li>끝까지_완주하기()</li>
+        </div>
+      </div>      
+    </section>
   </body>
 </html>
