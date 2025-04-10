@@ -1,146 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>개인 소개 페이지</title>
-    <!-- Bootstrap CSS -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Do+Hyeon&family=Jua&display=swap");
 
-      * {
-        font-family: "Jua", sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Five-Function: 팀 멤버목록</title>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
-      body {
-        background-color: white;
-        margin: 40px;
-      }
+  * {
+    background-color: white;
+  }
 
-      .menu-bar {
-        background-color: white;
-        border-top: 2px solid orange;
-        border-bottom: 2px solid orange;
-        padding: 10px;
-      }
+  body {
+    font-family: Arial, sans-serif;
+  }
 
-      .menu-bar ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
-        margin: 0;
-      }
+  /* header */
+  header {
+    padding: 10px 20px;
+  }
 
-      .menu-bar li a {
-        text-decoration: none;
-        color: #333;
-        font-size: 20px;
-        padding: 5px 10px;
-        font-weight: bold;
-      }
+  /*--navigation bar css--*/
+  .logo {
+    /* color: #ff9900;
+        font-size: 24px;
+        font-weight: bold; */
 
-      .container {
-        display: flex;
-        gap: 20px;
-        margin-top: 30px;
-      }
+    display: flex;
+    /* Flexbox 레이아웃 적용 */
+    align-items: center;
+    /* 수직 가운데 정렬 */
+    color: #ff9900;
 
-      .photo-box {
-        width: 320px;
-        height: 400px;
-        background-color: #ff9900;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-      }
+    font-size: 24px;
+    font-weight: bold;
+  }
 
-      .photo-box img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 3px solid #ddd;
-      }
+  .logo-image {
+    height: 70px;
+    /* 로고 이미지 높이 조정 */
+    margin-right: 30px;
+    /* 로고 이미지와 텍스트 사이의 간격 */
+    vertical-align: right;
+    /* 이미지와 텍스트를 수직 중앙 정렬 */
+  }
 
-      .info-box {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
+  /* menu-bar */
+  .menu-bar {
+    background-color: white;
+    /* 배경색 */
+    border-top: 2px solid orange;
+    /* 상단 테두리 */
+    border-bottom: 2px solid orange;
+    /* 하단 테두리 */
+    padding: 10px;
+  }
 
-      .info-box div {
-        background-color: gray;
-        padding: 10px;
-      }
+  .menu-bar ul {
+    list-style: none;
+    /* 목록 스타일 제거 */
+    display: flex;
+    /* Flexbox 레이아웃 사용 */
+    justify-content: space-around;
+    /* 각 항목 간 동일한 간격 */
+    padding: 0;
+    margin: 0;
+  }
 
-      .bio-box {
-        background-color: gray;
-        padding: 10px;
-        height: 230px;
-      }
+  .menu-bar li a {
+    text-decoration: none;
+    /* 링크 밑줄 제거 */
+    color: #333;
+    /* 글자색 */
+    font-size: 20px;
+    /* 글자 크기 */
+    padding: 5px 10px;
+    /* 내부 여백 */
+    font-weight: bold;
+    /* 글자를 굵게 설정 */
+  }
 
-      .team-member-box {
-        background-color: gray;
-        margin-top: 30px;
-        padding: 100px;
-        text-align: left;
-        position: relative;
-      }
+  /*--navigation bar css--*/
 
-      .team-member-box strong {
-        display: block;
-        margin: 0;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-      }
-    </style>
-  </head>
+  /*--여기서부터 작성해주세요--*/
 
-  <body>
-    <nav class="menu-bar">
-      <ul>
-        <li><a href="#">팀 소개</a></li>
-        <li><a href="#">팀원 소개</a></li>
-        <li><a href="#">방명록</a></li>
-      </ul>
-    </nav>
 
-    <div class="container">
-      <div class="photo-box">
-        <img src="../img/박민철.jpg" alt="박민철님의 프로필 사진" />
+  .container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .photo-box {
+  width: 320px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+  .photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+  }
+
+  .info-box {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info-box div,
+.bio-box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.bio-box {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.bio-box p {
+  margin: 8px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.info-box a {
+  color: #0288d1;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+
+
+.team-member-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff8e1;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.team-member-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.team-member-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.member-card {
+  flex: 1 1 220px;
+  max-width: 250px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.comment-bubble {
+  position: relative;
+  background-color: #eaf8ff;
+  border: 2px solid #d0f0ff;
+  padding: 8px 14px;
+  border-radius: 16px;
+  max-width: 100%;
+  word-break: break-word;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.92rem;
+  box-shadow: 0 3px 8px rgba(208, 240, 255, 0.3);
+}
+
+.comment-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #d0f0ff;
+  z-index: 0;
+}
+
+.comment-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #eaf8ff;
+  z-index: 1;
+}
+
+
+.comment-bubble p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.member-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+
+</style>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="..\img\알.png" alt="Five Function Logo" class="logo-image" />
+      Five Function
+    </div>
+  </header>
+
+  <nav class="menu-bar">
+    <ul>
+      <li><a href="Introduction.html">팀 소개</a></li>
+      <li><a href="#">팀원 소개</a></li>
+      <li><a href="#">방명록</a></li>
+      <!-- <li><a href="#">팀 목표와 약속</a></li> -->
+    </ul>
+  </nav>
+
+
+
+
+  <div class="container">
+    <!-- 왼쪽 사진 -->
+    <div class="photo-box">
+      <img src="..\img\박민철.jpg" alt="프로필 사진" />
+    </div>
+ 
+    <!-- 오른쪽 정보 박스 -->
+    <div class="info-box">
+      <div><strong>이름:</strong> 박민철</div>
+      <div><strong>MBTI:</strong> ISFJ</div>
+      <div>
+        <strong>Blog/Github 링크:</strong>
+        <a href="https://blog.naver.com/lovethyself89" target="_blank">Blog</a>
       </div>
-
-      <header></header>
-
-      <div class="info-box">
-        <div><strong>이름 : 박민철</strong></div>
-        <div><strong>MBTI : ISFJ </strong></div>
-        <div>
-          <strong>Blog/Github 링크: https://syuare.tistory.com/</strong>
-        </div>
-        <div class="bio-box">
-          <strong
-            >자기소개
-            <p>안녕하세요! 저는 24시간 게임이 가능한 박민철입니다.</p>
-            <p>
-              24시간 게임을 하기보다 24시간 코딩을 통해 백엔드 개발자가 되고자
-              합니다.
-            </p>
-          </strong>
-        </div>
+ 
+      <!-- 자기소개 박스 -->
+      <div class="bio-box">
+        <strong>자기소개 : </strong>
+        <p>다 년간 서비스 운영, 커뮤니티 관리, PM 업무의 경험을 통해 사용자 관점에서도 세심하게 고민하여, 사용자와 개발자 모두에게 인정받는 개발자가 되고자 합니다.</p>
+        <p>욕심이 많아서 1인분이 아닌 2~3인분, 주변의 통나무까지 들 수 있도록 빠르게 성장하기 위해 이번 부트 캠프에 참여하게 되었습니다.</p>
+        <p>내 성격의 장단점: 꼼꼼한 성격이라 디테일에 강합니다. 다만, 새로운 환경에 익숙해지기까진 시간이 조금은 필요한 편입니다. (물론, 여러 경험을 통해 적극 개선 중에 있습니다.)</p>
+        <p>협업 방식: 배려와 조율 중심의 조용하지만 강력한 조력자 느낌이...라고 생각합니다.</p>
+        <p>앞으로의 각오: 조급하지 않게, 그러나 매일 단단히 성장할 수 있도록 노력하겠습니다.</p>
+     
+     
       </div>
     </div>
-
-    <div class="team-member-box">
-      <strong
-        >팀원들의 한 마디
-        <p>구대웅 : 스쿠버 다이빙과 같이 깊은 코딩의 세계로 출발!</p>
-        <p>박민철 : 게임 중독보다 코딩 중독의 세계로!</p>
-        <p>차순영 : 민철님 화이팅! 재미있는 웹툰 추천해드릴게요!</p>
-        <p>천세경 : 모바일 마비노기 게임의 세계로 출발!</p>
-      </strong>
+  </div>
+ 
+  <!-- 팀원들의 한마디 -->
+  <div class="team-member-section">
+    <h2>팀원들의 한마디</h2>
+    <div class="team-member-grid">
+ 
+      <!-- 구대웅 -->
+      <div class="member-card">
+        <div class="comment-bubble">
+          <p><strong>구대웅:</strong> 스쿠버 다이빙 버디로 같이 하러가요!</p>
+        </div>
+        <img src="..\img\구대웅님.png" alt="구대웅" class="member-img" />
+      </div>
+ 
+      <!-- 이예진 -->
+      <div class="member-card">
+        <div class="comment-bubble">
+          <p><strong>이예진:</strong> 정확하고 확실하게 업무처리 하시는게 너무 부럽습니다! 리스펙해요!!</p>
+        </div>
+        <img src="..\img\이예진님.png" alt="이예진" class="member-img" />
+      </div>
+ 
+      <!-- 차순영 -->
+      <div class="member-card">
+        <div class="comment-bubble">
+          <p><strong>차순영:</strong> 민철위키님! 짧은 시간 함께 협업하면서 항상 한 단계 더 앞서 일의 업무 진행을 촉진시키는 능력이 있으신 것 같습니다! 화이팅 입니다! </p>
+        </div>
+        <img src="..\img\차순영님.png" alt="차순영" class="member-img" />
+      </div>
+ 
+      <!-- 천세경 -->
+      <div class="member-card">
+        <div class="comment-bubble">
+          <p><strong>천세경:</strong> 24시간 돌려야 하는 모바일 마비노기 같이 하실래요?</p>
+        </div>
+        <img src="..\img\천세경님.png" alt="천세경" class="member-img" />
+      </div>
+ 
     </div>
-  </body>
+  </div>
+ 
+ 
+</body>
+
+
+</body>
+
 </html>
