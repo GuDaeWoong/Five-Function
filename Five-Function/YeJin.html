@@ -102,7 +102,6 @@
   .photo-box {
     width: 320px;
     height: 400px;
-    /* background-color: #ff9900; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,58 +158,96 @@
 
 
 
-.team-member-box {
-  max-width: 100%;
-  margin-top: 30px;
-  background-color: #fff3e0;
-  padding: 30px;
+.team-member-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff8e1;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
-.team-member-box h2 {
-  background-color: #fff3e0;
-  margin-bottom: 20px;
-  font-size: 1.5em;
-  color: #333;
+.team-member-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-.team-comments {
-  background-color: #fff3e0;
+.team-member-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
 }
 
-.comment-bubble {
+.member-card {
+  flex: 1 1 220px;
+  max-width: 250px;
   background-color: #ffffff;
-  padding: 15px 10px;
-  border-radius: 20px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.comment-bubble {
   position: relative;
-  flex: 1 1 200px;
-  font-size: 1rem; /* 글자 크기 */
+  background-color: #eaf8ff;
+  border: 2px solid #d0f0ff;
+  padding: 8px 14px;
+  border-radius: 16px;
+  max-width: 100%;
+  word-break: break-word;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.92rem;
+  box-shadow: 0 3px 8px rgba(208, 240, 255, 0.3);
+}
+
+.comment-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #d0f0ff;
+  z-index: 0;
 }
 
 .comment-bubble::after {
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 30px;
-  border-width: 10px 10px 0;
-  border-style: solid;
-  border-color: #ffffff transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #eaf8ff;
+  z-index: 1;
 }
+
 
 .comment-bubble p {
   margin: 0;
+  font-size: 1rem;
   color: #333;
-  font-size: 0.95em;
 }
-.memberCard{
-  background-color: #fff3e0;
+
+.member-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccc;
 }
 
 .card-img-top{
@@ -249,7 +286,7 @@
     <div class="photo-box">
       <img src="..\img\이예진.jpg" alt="프로필 사진" />
     </div>
-  
+ 
     <!-- 오른쪽 정보 박스 -->
     <div class="info-box">
       <div><strong>이름:</strong> 이예진</div>
@@ -259,50 +296,62 @@
         <a href="https://soaveo3o.tistory.com/" target="_blank">Tistory</a> /
         <a href="https://github.com/YeJin420" target="_blank">GitHub</a>
       </div>
-  
+ 
       <!-- 자기소개 박스 -->
       <div class="bio-box">
         <strong>자기소개 : </strong>
-        <p>다양한 장르의 게임과 음악에 조예가 깊은 이예진입니다.</p>
-        <p>참고로 곽철이 이모티콘을 다수 보유하고 있습니다.</p>
-        <p>곽철이 이모티콘을 사용해 저와 소통하시고 싶으신분은 환영입니다.</p>
-        <p>1234</p>
+        <p>안녕하세요! 저는 비전공자같은 전공자 이예진입니다.</p>
+        <p>대학 졸업 후 전공과 다른 일을 하다가 미래지향적이지 않은 것 같아 전공을 살리고자 지원하게되었습니다!</p>
+        <p>RPG 게임, 음악, 산책, 여행, 곽철이 이모티콘을 굉장히 좋아합니다!</p>
+          <p>조금 느리긴해도 별주부전의 거북이처럼 끝까지 완주하겠습니다!</p>
       </div>
     </div>
   </div>
-  
+ 
   <!-- 팀원들의 한마디 -->
-    <div class="team-member-box">
-      <h2>팀원들의 한 마디</h2>
-      <div class="team-comments">
-        <div class="memberCard" style="width: 18rem;">
-          <div class="comment-bubble">
-            <p><strong>구대웅 :</strong> 자신감 가져욧!!!</p>
-          </div>
-          <img src="../img/구대웅님.png" class="card-img-top" alt="구대웅님 프로필 사진">
+  <div class="team-member-section">
+    <h2>팀원들의 한마디</h2>
+    <div class="team-member-grid">
+ 
+      <!-- 구대웅 -->
+      <div class="member-card">
+        <div class="comment-bubble">
+          <p><strong>구대웅:</strong> 오둥이 임티로 소통하고싶어요!</p>
         </div>
-        <div class="memberCard" style="width: 18rem;">
-          <div class="comment-bubble">
-            <p><strong>박민철 :</strong> 저와 함께 게임하시죠!</p>
-          </div>
-          <img src="../img/박민철님.png" class="card-img-top" alt="박민철님 프로필 사진">
-        </div>
-        <div class="memberCard" style="width: 18rem;">
-          <div class="comment-bubble">
-            <p><strong>차순영 :</strong> 미니 프로젝트 화이팅!!</p>
-          </div>
-          <img src="../img/차순영님.png" class="card-img-top" alt="차순영님 프로필 사진">
-        </div>
-        <div class="memberCard" style="width: 18rem;">
-          <div class="comment-bubble">
-            <p><strong>천세경 :</strong> 마비노기 게임 함께하실래요?</p>
-          </div>
-            <img src="../img/천세경님.png" class="card-img-top" alt="천세경님 프로필 사진">
-          </div>
-
-        </div>
+        <img src="..\img\구대웅님.png" alt="구대웅" class="member-img" />
       </div>
-
+ 
+      <!-- 박민철 -->
+      <div class="member-card">
+        <div class="comment-bubble">
+          <p><strong>박민철:</strong> 저와 함께 게임하시죠!</p>
+        </div>
+        <img src="..\img\박민철님.png" alt="박민철" class="member-img" />
+      </div>
+ 
+      <!-- 차순영 -->
+      <div class="member-card">
+        <div class="comment-bubble">
+          <p><strong>차순영:</strong> 전공과 관련 없는 길을 용감하게 선택하신 점에 응원과 박수를 보냅니다! 화이팅 !</p>
+        </div>
+        <img src="..\img\차순영님.png" alt="차순영" class="member-img" />
+      </div>
+ 
+      <!-- 천세경 -->
+      <div class="member-card">
+        <div class="comment-bubble">
+          <p><strong>천세경:</strong> 저는 토뭉이를 좋아합니다 ㅋ.ㅋ</p>
+        </div>
+        <img src="..\img\천세경님.png" alt="천세경" class="member-img" />
+      </div>
+ 
     </div>
-  </body>
+  </div>
+ 
+ 
+</body>
+
+
+</body>
+
 </html>
