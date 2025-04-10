@@ -11,113 +11,114 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-  </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
-    * {
-      background-color: white;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    /* header */
-    header {
-      padding: 10px 20px;
-    }
-
-    /*--navigation bar css--*/
-    .logo {
-      /* color: #ff9900;
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+  
+      * {
+        background-color: white;
+      }
+  
+      body {
+        font-family: Arial, sans-serif;
+      }
+  
+      /* header */
+      header {
+        padding: 10px 20px;
+      }
+  
+      /*--navigation bar css--*/
+      .logo {
+        /* color: #ff9900;
+          font-size: 24px;
+          font-weight: bold; */
+  
+        display: flex;
+        /* Flexbox 레이아웃 적용 */
+        align-items: center;
+        /* 수직 가운데 정렬 */
+        color: #ff9900;
+  
         font-size: 24px;
-        font-weight: bold; */
-
-      display: flex;
-      /* Flexbox 레이아웃 적용 */
-      align-items: center;
-      /* 수직 가운데 정렬 */
-      color: #ff9900;
-
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .logo-image {
-      height: 70px;
-      /* 로고 이미지 높이 조정 */
-      margin-right: 30px;
-      /* 로고 이미지와 텍스트 사이의 간격 */
-      vertical-align: right;
-      /* 이미지와 텍스트를 수직 중앙 정렬 */
-    }
-
-    /* menu-bar */
-    .menu-bar {
-      background-color: white;
-      /* 배경색 */
-      border-top: 2px solid orange;
-      /* 상단 테두리 */
-      border-bottom: 2px solid orange;
-      /* 하단 테두리 */
-      padding: 10px;
-    }
-
-    .menu-bar ul {
-      list-style: none;
-      /* 목록 스타일 제거 */
-      display: flex;
-      /* Flexbox 레이아웃 사용 */
-      justify-content: space-around;
-      /* 각 항목 간 동일한 간격 */
-      padding: 0;
-      margin: 0;
-    }
-
-    .menu-bar li a {
-      text-decoration: none;
-      /* 링크 밑줄 제거 */
-      color: #333;
-      /* 글자색 */
-      font-size: 20px;
-      /* 글자 크기 */
-      padding: 5px 10px;
-      /* 내부 여백 */
-      font-weight: bold;
-      /* 글자를 굵게 설정 */
-    }
-    /*--navigation bar css--*/
-
-    /*--여기서부터 작성해주세요--*/
-    .mycards {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 1500px;
-      border-radius: 20px;
-      border: 2px solid rgb(254, 186, 23);
-      margin: 50px auto 0px auto;
-    }
-    .card {
-      border-radius: 20px;
-      border-color: 1px solid transparent;
-      width:220px;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-      margin: 30px;
-    }
-    .card-img-top {
-      height: 200px;
-      width: 200px;
-      border-radius: 20px;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
+        font-weight: bold;
+      }
+  
+      .logo-image {
+        height: 70px;
+        /* 로고 이미지 높이 조정 */
+        margin-right: 30px;
+        /* 로고 이미지와 텍스트 사이의 간격 */
+        vertical-align: right;
+        /* 이미지와 텍스트를 수직 중앙 정렬 */
+      }
+  
+      /* menu-bar */
+      .menu-bar {
+        background-color: white;
+        /* 배경색 */
+        border-top: 2px solid orange;
+        /* 상단 테두리 */
+        border-bottom: 2px solid orange;
+        /* 하단 테두리 */
+        padding: 10px;
+      }
+  
+      .menu-bar ul {
+        list-style: none;
+        /* 목록 스타일 제거 */
+        display: flex;
+        /* Flexbox 레이아웃 사용 */
+        justify-content: space-around;
+        /* 각 항목 간 동일한 간격 */
+        padding: 0;
+        margin: 0;
+      }
+  
+      .menu-bar li a {
+        text-decoration: none;
+        /* 링크 밑줄 제거 */
+        color: #333;
+        /* 글자색 */
+        font-size: 20px;
+        /* 글자 크기 */
+        padding: 5px 10px;
+        /* 내부 여백 */
+        font-weight: bold;
+        /* 글자를 굵게 설정 */
+      }
+      /*--navigation bar css--*/
+  
+      /*--여기서부터 작성해주세요--*/
+      .mycards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 1500px;
+        border-radius: 20px;
+        border: 2px solid rgb(254, 186, 23);
+        margin: 50px auto 0px auto;
+      }
+      .card {
+        border-radius: 20px;
+        border-color: 1px solid transparent;
+        width:220px;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 30px;
+      }
+      .card-img-top {
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
 
   <body>
     <header>
@@ -129,9 +130,9 @@
 
     <nav class="menu-bar">
       <ul>
-        <li><a href="Introduction.html">팀 소개</a></li>
-        <li><a href="#">팀원 소개</a></li>
-        <li><a href="#">방명록</a></li>
+        <li><a href="teamInfo.html">팀 소개</a></li>
+        <li><a href="memberCards.html">팀원 소개</a></li>
+        <li><a href="guestbook.html">방명록</a></li>
         <!-- <li><a href="#">팀 목표와 약속</a></li> -->
       </ul>
     </nav>
@@ -144,7 +145,7 @@
           <h5 class="card-title">구대웅</h5>
           <p class="card-text">
             MBTI: ISTJ<br />
-            별명: 곰토끼<br />
+            별명: 버섯마을 지킴이<br />
           </p>
           <a href="./dwgu.html" class="mybtn"><button type="button" class="btn btn-warning">상세보기</button></a>
         </div> 
@@ -156,7 +157,7 @@
           <h5 class="card-title">박민철</h5>
           <p class="card-text">
             MBTI: ISFJ<br />
-            별명:<br />
+            별명:민철위키<br />
           </p>
           <a href="./minchul.html" class="mybtn"><button type="button" class="btn btn-warning">상세보기</button></a>
         </div> 
@@ -168,7 +169,7 @@
           <h5 class="card-title">이예진</h5>
           <p class="card-text">
             MBTI: ESTP<br />
-            별명: <br />
+            별명: 덕이동 불주먹<br />
           </p>
           <a href="./YeJin.html" class="mybtn"><button type="button" class="btn btn-warning">상세보기</button></a>
         </div> 
@@ -180,7 +181,7 @@
           <h5 class="card-title">천세경</h5>
           <p class="card-text">
             MBTI: INTJ<br />
-            별명: <br />
+            별명: 다은마을 피크민 대주주<br />
           </p>
           <a href="./segeyong.html" class="mybtn"><button type="button" class="btn btn-warning">상세보기</button></a>
         </div> 
@@ -192,7 +193,7 @@
           <h5 class="card-title">차순영</h5>
           <p class="card-text">
             MBTI: ESTJ-A / ENFJ-T<br />
-            별명: <br />
+            별명: 뜐뜐<br />
           </p>
           <a href="./soonyoung.html" class="mybtn"><button type="button" class="btn btn-warning">상세보기</button></a>
         </div> 
