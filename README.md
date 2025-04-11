@@ -172,12 +172,12 @@ const firebaseConfig = {
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 | **문제**     | 반응형 콘텐츠로 작업된 내용들의 경우 화면 크기에 맞춰 자동적으로 조정이 되나, 이미지 공간 따로, 텍스트 공간 따로 작동하는 것을 확인 |
 | **시도**     | 이미지와 텍스트 공간을 하나의 그룹으로 묶어줄 필요가 있어 해당 작업 시도                                                            |
-| **해결방안** | 부트스트랩 - containers 사용 <br> 코드는 사진으로 대체                                                                              |
+| **해결방안** | 부트스트랩 - containers 사용 <br> <img src="./img/minchul_prob2.jpg" alt="minchul_prob2.jpg" />                                     |
 
 **문제3.** github push/pull 충돌
 | | |
 |---|---|
-| **문제** | git clone 이후 기존 작업 페이지에서 코드 수정 후 업로드가 필요한 상황에서, git pull 이후 git push 시도하였으니 정상적으로 작동하지 않았던 문제 - github > main 브랜치에서 git pull을 성공했다고 표시되나, git push 시도 시 여전히 git pull을 시도하라는 에러 메시지 확인 - git log를 확인해본 결과 main 브랜치에 적용된 최신 log가 확인되지 않음 <br> 사진1, 사진2 |
+| **문제** | git clone 이후 기존 작업 페이지에서 코드 수정 후 업로드가 필요한 상황에서, git pull 이후 git push 시도하였으니 정상적으로 작동하지 않았던 문제 - github > main 브랜치에서 git pull을 성공했다고 표시되나, git push 시도 시 여전히 git pull을 시도하라는 에러 메시지 확인 - git log를 확인해본 결과 main 브랜치에 적용된 최신 log가 확인되지 않음 <br> <img src="./img/minchul_prob3_1.png" alt="minchul_prob3_1.png" /> <img src="./img/minchul_prob3_2.png" alt="minchul_prob3_2.png" /> |
 | **시도** | 1. 여러 차례 git pull / git push 진행 <br> 2. git pull 이후 git add, commit 재실행 후 git push 시도 <br> 3. git pull origin 브런치 --allow-unrelated-histories 를 통해 원격 저장소(github)와 로컬 저장소(내 PC)의 히스토리 확인, 히스토리가 일치하지 않은 파일 삭제 후 git pull 재시도 |
 | **문제 해결** | 위의 시도를 모두 진행해보았으나 모두 해결되지 않아, 가장 확실한 방법인 작업 폴더, 파일을 모두 삭제 후 처음부터 다시 시작, 해결됨 <br> - git clone > git pull > git add/commit > git push|
 | **문제 원인** | 작업 폴더에 git clone을 하기 전에 git init을 한 것이 원인, 로컬 저장소의 .git의 추척 내용과, 원격 저장소의 .git 추적 내용이 달라서 발생한 문제였던 것으로 확인 |
