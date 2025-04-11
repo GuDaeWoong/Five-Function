@@ -79,7 +79,9 @@ const firebaseConfig = {
 
 ### 1. 메인 페이지
 
-처음 프로그램을 실행할 경우 보여지는 **메인페이지** 입니다.
+> 처음 프로그램을 실행할 경우 보여지는 **메인페이지** 입니다.
+
+<img src="./img/mainPage.png" alt="mainPage.png" width="800" />
 
 - **header** : 헤더의 로고 부분에 `<a>`태그를 사용하여 홈페이지의 메인으로 이동하는 하이퍼링크를 연결하였습니다.
 - **navigation bar** : `<nav>`태그와 `<li>`태그를 이용하여 각 요소에 맞는 페이지의 하이퍼링크를 연결하였습니다.
@@ -87,7 +89,9 @@ const firebaseConfig = {
 
 ### 2. 팀 소개 페이지
 
-팀에 대한 정보를 조회할 수 있는 페이지입니다.
+> 팀에 대한 정보를 조회할 수 있는 페이지입니다.
+
+<img src="./img/teaminfoPage.PNG" alt="teaminfoPage.png" width="800" />
 
 - 팀 소개 페이지는 **팀 이미지를 적절하게 조정한 .team-photo 클래스**와, **팀 설명을 담은 .team-description 클래스**, 그리고 이 **두 클래스를 하나로 묶은 .team-info 클래스**로 구성하였습니다.
 - CSS를 통해 팀 설명 박스에 그림자 요소를 추가하여 조금 더 고급스러운 디자인으로 구현하였습니다.
@@ -97,7 +101,9 @@ const firebaseConfig = {
 
 ### 3. 팀원 소개 페이지
 
-팀원 카드를 통해 각 팀원의 개인 상세 페이지로 이동할 수 있는 페이지입니다.
+> 팀원 카드를 통해 각 팀원의 개인 상세 페이지로 이동할 수 있는 페이지입니다.
+
+<img src="./img/membersPage.PNG" alt="membersPage.png" width="800" />
 
 - 개인 상세 페이지로 연결될 수 있도록 상세보기 버튼에 `<a>` 태그를 추가하였습니다.
 - BootStrap의 카드 그룹과 버튼 양식을 사용하여 구현하였습니다.
@@ -106,7 +112,9 @@ const firebaseConfig = {
 
 ### 4. 개인 상세 페이지
 
-팀원들의 정보를 조회할 수 있는 페이지입니다.
+> 팀원들의 정보를 조회할 수 있는 페이지입니다.
+
+<img src="./img/personalPage.PNG" alt="personalPage.png" width="800" />
 
 - **photo box** : 사진 박스 단일이 아닌 **테두리에 border**를 넣어 **액자형식으로 작성**하였습니다.
 - **info box** : `<a>` 태그를 사용하여 팀원들의 Blog/Github 하이퍼링크 연결하였습니다.
@@ -116,7 +124,9 @@ const firebaseConfig = {
 
 ### 5. 방명록 페이지
 
-방명록을 작성하고 조회할 수 있는 페이지입니다.
+> 방명록을 작성하고 조회할 수 있는 페이지입니다.
+
+<img src="./img/guestbookPage.PNG" alt="guestbookPage.png" width="800" />
 
 - Firebase와 연동하여 **작성자의 이름, 방명록 내용, 작성일자를 저장하고 조회**할 수 있습니다.
 - guestbook.html파일의 Firebase Config부분에 **Firebase 연동에 필요한 설정을 하지 않으면** "데이터 불러오기를 실패하였습니다.(Firebase 연동 실패)" 라는 문구가 노출됩니다.
