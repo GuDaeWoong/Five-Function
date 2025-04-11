@@ -60,25 +60,17 @@ const firebaseConfig = {
 
 ## 📁 와이어 프레임
 
-| 메인 페이지                                             |
-| ------------------------------------------------------- |
-| <img src="./img/main.png" alt="main.png" width="800" /> |
+| 메인 페이지                                             | 팀 소개 페이지                                                    |
+| ------------------------------------------------------- | ----------------------------------------------------------------- |
+| <img src="./img/main.png" alt="main.png" width="500" /> | <img src="./img/team_info.png" alt="team_info.png" width="500" /> |
 
-| 팀 소개 페이지                                                    |
-| ----------------------------------------------------------------- |
-| <img src="./img/team_info.png" alt="team_info.png" width="800" /> |
-
-| 팀원 소개 페이지                                                      |
-| --------------------------------------------------------------------- |
-| <img src="./img/team_people.png" alt="team_people.png" width="800" /> |
-
-| 개인 상세 페이지                                                          |
-| ------------------------------------------------------------------------- |
-| <img src="./img/personal_info.png" alt="personal_info.png" width="800" /> |
+| 팀원 소개 페이지                                                      | 개인 상세 페이지                                                          |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <img src="./img/team_people.png" alt="team_people.png" width="500" /> | <img src="./img/personal_info.png" alt="personal_info.png" width="500" /> |
 
 | 방명록 페이지                                                     |
 | ----------------------------------------------------------------- |
-| <img src="./img/guestbook.png" alt="guestbook.png" width="800" /> |
+| <img src="./img/guestbook.png" alt="guestbook.png" width="500" /> |
 
 <br>
 <br>
